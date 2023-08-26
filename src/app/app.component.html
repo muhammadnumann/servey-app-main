@@ -1,0 +1,118 @@
+<div class="main-content">
+  <div class="row parent-row mx-0 px-lg-0 justify-content-center">
+    <div class="col-lg-7 col-adjust-1 ps-lg-0 pe-lg-0">
+      <div class="column-left">
+        <app-servey-left-image></app-servey-left-image>
+      </div>
+    </div>
+    <!-- <div class="col-lg-5 col-adjust-2"> -->
+    <!-- <router-outlet></router-outlet> -->
+
+    <div class="col-lg-5 col-adjust-2">
+      <div class="column-right">
+        <div class="row mx-0">
+          <div class="col-xl-9 mx-auto mb-lg-0 mb-5">
+            <div class="form-right" [ngSwitch]="serveyNumber">
+              <app-servey-one
+                *ngSwitchCase="'serveyone'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-one>
+              <app-servey-two
+                *ngSwitchCase="'serveytwo'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-two>
+              <app-servey-three
+                *ngSwitchCase="'serveythree'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-three>
+              <app-servey-four
+                *ngSwitchCase="'serveyfour'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-four>
+              <app-servey-five
+                *ngSwitchCase="'serveyfive'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-five>
+              <app-servey-six
+                *ngSwitchCase="'serveysix'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-six>
+              <app-servey-seven
+                *ngSwitchCase="'serveyseven'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-seven>
+              <app-servey-eight
+                *ngSwitchCase="'serveyeight'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-eight>
+              <app-servey-nine
+                *ngSwitchCase="'serveynine'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-nine>
+              <app-servey-ten
+                *ngSwitchCase="'serveyten'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-ten>
+              <app-servey-eleven
+                *ngSwitchCase="'serveyeleven'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-eleven>
+              <app-servey-twelve
+                *ngSwitchCase="'serveytwelve'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twelve>
+              <app-servey-thirteen
+                *ngSwitchCase="'serveythirteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-thirteen>
+              <app-servey-fourteen
+                *ngSwitchCase="'serveyfourteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-fourteen>
+              <app-servey-fifteen
+                *ngSwitchCase="'serveyfifteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-fifteen>
+              <app-servey-sixteen
+                *ngSwitchCase="'serveysixteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-sixteen>
+              <app-servey-seventeen
+                *ngSwitchCase="'serveyseventeen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-seventeen>
+              <app-servey-eighteen
+                *ngSwitchCase="'serveyeighteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-eighteen>
+              <app-servey-nineteen
+                *ngSwitchCase="'serveynineteen'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-nineteen>
+              <app-servey-twenty
+                *ngSwitchCase="'serveytwenty'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twenty>
+              <app-servey-twentyone
+                *ngSwitchCase="'serveytwentyone'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twentyone>
+              <app-servey-twentytwo
+                *ngSwitchCase="'serveytwentytwo'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twentytwo>
+              <app-servey-twentythree
+                *ngSwitchCase="'serveytwentythree'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twentythree>
+              <app-servey-twentyfour
+                *ngSwitchCase="'serveytwentyfour'"
+                (changeServeyStep)="changeServeyStep($event)"
+              ></app-servey-twentyfour>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

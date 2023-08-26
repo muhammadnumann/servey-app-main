@@ -1,0 +1,169 @@
+.heading-top {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #08073A;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+.question{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #08073A;
+}
+.small{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+    margin-bottom: 30px !important;
+}
+
+.checkbox-item {
+    margin: 10px 14px !important;
+}
+.checkbox-group label,
+.input-item{
+    width: 170px;
+    height: 170px;
+    border: 2px solid #3498DB;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.checkbox-group label.active {
+    background-color: #3498DB;
+}
+.checkbox-group label.active svg path,
+.checkbox-group label.active svg mask {
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+.checkbox-group label.active svg circle,
+.checkbox-group label.active svg rect{
+    stroke: #ffffff;
+}
+.checkbox-group label input {
+    display: none;
+}
+.number-input{
+    width: 66px;
+    height: 66px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 2px solid #3498DB;
+    border-radius: 5px;
+    font-size: 36px;
+    text-align: center;
+}
+.number-counter{
+    color: white;
+    font-size: 22px;
+    width: 24.95px;
+    height: 24.95px;
+    background: #3498DB;
+    border-radius: 5px;
+    border: none;
+}
+input:active{
+border: none;
+}
+@media (max-width: 1350px ) {
+    .checkbox-item {
+        width: 145px;
+    }
+    .checkbox-group label,
+    .input-item{
+        width: 145px;
+        height: 145px;
+        border: 2px solid #3498DB;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width : 440px){
+    .heading-top {
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .small{
+        font-size: 16px;
+        line-height: 24px;
+        /* margin-bottom: 30px !important; */
+    }
+    .checkbox-item p{
+        font-size: 14px;
+    }
+    .checkbox-group label {
+        width: 120px;
+        height: 120px;
+    }
+    .checkbox-group label svg{
+        width: 70px;
+        height: 100px;
+    }
+    .number-input{
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+    }
+    .number-counter{
+        font-size: 20px;
+        width: 20.95px;
+        height: 20.95px;
+    }
+    .input-item{
+        width: 120px;
+        height: 120px;
+    }
+ 
+}
+@media screen and (max-width : 395px){
+    .heading-top {
+        font-weight: 700;
+        font-size: 28px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .small{
+        font-size: 10px;
+    }
+    .checkbox-item p{
+        font-size: 12px;
+    }
+    .checkbox-group label {
+        width: 105px;
+        height: 105px;
+    }
+    .checkbox-group label svg{
+        width: 65px;
+        height: 90px;
+    }
+    .number-input{
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+    .number-counter{
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+    .input-item{
+        width: 105px;
+        height: 105px;
+    }
+   
+}

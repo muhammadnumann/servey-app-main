@@ -1,0 +1,88 @@
+.checkbox-group label svg path {
+  fill: #3498db;
+}
+.checkbox-group label.active {
+  background-color: #3498db;
+}
+.checkbox-group label.active svg path {
+  fill: #ffffff;
+}
+.checkbox-group label input {
+  display: none;
+}
+.location-form .form-row {
+  margin: 20px -15px;
+}
+.location-form ::placeholder,
+.location-form select {
+  color: #696969;
+  font-size: 14px;
+}
+.location-form .form-control {
+  box-shadow: none;
+  border: 1px solid #cbcbcb;
+  margin: 0px 0px 0px;
+  padding: 12px 20px 12px 45px;
+  position: relative;
+  z-index: 99;
+}
+.location-form .input-group span.icon {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px 15px;
+  transform: scale(0.8);
+  z-index: 100;
+}
+.location-form .input-group .icon-user {
+  background: url("/assets/images/person-icon.png");
+}
+.location-form .input-group .icon-email {
+  background: url("/assets/images/envelope-icon.png");
+}
+.location-form .input-group .icon-phone {
+  background: url("/assets/images/phone-icon.png");
+}
+.location-form .input-group .icon-home {
+  background: url("/assets/images/home-icon.png");
+}
+.location-form .input-group .icon-web {
+  background: url("/assets/images/web-icon.png");
+}
+.location-form .input-group .icon-location {
+  background: url("/assets/images/location-icon.png");
+}
+.checkbox-inline {
+  display: flex;
+  align-items: center;
+}
+.checkbox-inline p {
+  margin: 0;
+}
+.btn-next {
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-back {
+  border: 2px solid #3498db;
+  background-color: #fff;
+  color: #3498db;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-back:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .form-inner {
+    margin-top: 50px;
+  }
+}

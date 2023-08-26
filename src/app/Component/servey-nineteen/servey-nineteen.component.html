@@ -1,0 +1,57 @@
+<form
+  [formGroup]="checkOutLPRSetupForm"
+  (ngSubmit)="formSubmit()"
+  class="form-inner location-form vh-100 d-flex align-items-center justify-content-center flex-column"
+>
+  <h3 class="heading-top">Checkout LPR Set Up</h3>
+  <p>
+    Same logic is applied for exit points. Make sure you set up the correct
+    configuration for this access profile.
+  </p>
+
+  <div class="row form-row my-5">
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="icon icon-cctv"></span>
+        <select
+          formControlName="AllowedCameras1"
+          class="form-control"
+          placeholder="Location Name"
+        >
+          <option value="">No. of CCTV Cameras Allowed</option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="Three">Three</option>
+        </select>
+      </div>
+      <small
+        *ngIf="AllowedCameras1?.invalid && AllowedCameras1?.touched"
+        class="text-danger my-1"
+        >This Field is required</small
+      >
+    </div>
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="icon icon-cctv"></span>
+        <select
+          formControlName="AllowedCameras2"
+          class="form-control"
+          placeholder="Location Name"
+        >
+          <option value="">No. of CCTV Cameras Allowed</option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="Three">Three</option>
+        </select>
+      </div>
+      <small
+        *ngIf="AllowedCameras2?.invalid && AllowedCameras2?.touched"
+        class="text-danger my-1"
+        >This Field is required</small
+      >
+    </div>
+  </div>
+
+  <button class="btn btn-next" type="submit">Next</button>
+  <button class="btn btn-back mt-2" (click)="goBack()">Back</button>
+</form>

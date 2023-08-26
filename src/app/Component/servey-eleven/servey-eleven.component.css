@@ -1,0 +1,124 @@
+.location-form .form-row {
+  margin: 20px -15px;
+}
+.location-form ::placeholder,
+.location-form select {
+  color: #696969;
+  font-size: 14px;
+}
+.location-form .form-control {
+  box-shadow: none;
+  border: 1px solid #cbcbcb;
+  margin: 0px 0px 20px;
+  padding: 12px 20px 12px 45px;
+  position: relative;
+  z-index: 99;
+}
+.location-form .input-group span.icon {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px 15px;
+  transform: scale(0.8);
+  z-index: 100;
+}
+.location-form .input-group .icon-home {
+  background: url("/assets/images/home-icon.png");
+}
+.location-form .input-group .icon-web {
+  background: url("/assets/images/web-icon.png");
+}
+.location-form .input-group .icon-location {
+  background: url("/assets/images/location-icon.png");
+}
+.checkbox-item {
+  margin: 10px 15px !important;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px;
+  position: relative;
+}
+.radio-group .radio-item p {
+  margin: 0 15px;
+}
+.radio-group label span.radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3498db;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.radio-group label input {
+  display: none;
+}
+.radio-group label input:checked + span.radio::before {
+  position: absolute;
+  content: "";
+  left: 0.5px;
+  top: 0.5px;
+  border: 2px solid #3498db;
+  background-color: #3498db;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-next {
+  background: #3498db;
+  border: 2px solid #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-back {
+  border: 2px solid #3498db;
+  background-color: #fff;
+  color: #3498db;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-next:hover {
+  background: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+.btn-back:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .form-inner {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1350px) {
+  .checkbox-item {
+    width: 145px;
+  }
+  .checkbox-group label,
+  .input-item {
+    width: 145px;
+    height: 145px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}

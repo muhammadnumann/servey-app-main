@@ -1,0 +1,41 @@
+.checkbox-group label.active {
+    background-color: #3498DB;
+}
+.checkbox-group label.active svg path {
+    fill: #ffffff;
+}
+.checkbox-group label input {
+    display: none;
+}
+.btn-next {
+    background: #3498DB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+.welcome-form .button-group {
+    margin-top: 45px;
+}
+
+.welcome-form .inline-checkbox {
+    display: inline-flex;
+    align-items: center;
+}
+.welcome-form .inline-checkbox small {
+    display: inline-block;
+    padding-left: 10px;
+}
+.welcome-form .btn-cancel {
+    background-color: #EC7063;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .form-inner {
+        margin-top: 50px;
+    }
+}

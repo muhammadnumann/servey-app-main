@@ -1,0 +1,23 @@
+<div class="form-inner">
+  <h3 class="heading-top">Let’s make sure you’re a human!</h3>
+  <form [formGroup]="reCaptchaFrom" (ngSubmit)="formSubmit()">
+    <div class="recaptcha-container">
+      <div class="recaptcha-box">
+        <re-captcha
+          formControlName="recaptcha"
+          (resolved)="resolved($event)"
+          siteKey="6LfYw5MgAAAAAEQogocj-1X3LlzaWUhflDKaVs0e"
+        ></re-captcha>
+        <re-captcha></re-captcha>
+      </div>
+    </div>
+    <button
+      class="btn btn-next"
+      [disabled]="reCaptchaFrom.invalid"
+      type="submit"
+    >
+      Next
+    </button>
+    <button class="btn btn-back mt-2" (click)="goBack()">Back</button>
+  </form>
+</div>

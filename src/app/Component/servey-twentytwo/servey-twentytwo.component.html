@@ -1,0 +1,93 @@
+<form [formGroup]="applyVehicleProfile" class="form-inner location-form my-5">
+  <h3 class="heading-top mb-5">Apply Vehicle profile</h3>
+  <p>
+    Please select the access points with Vehicle access to which you want to
+    apply the this access profile.
+  </p>
+  <p>
+    You will be required to add new Vehicle access profiles until all access
+    points have such a profile association. You can also eliminate some access
+    points from this quote.
+  </p>
+
+  <div class="form-grid">
+    <div class="row form-row">
+      <div class="col-8">
+        <div class="input-group">
+          <span class="icon icon-home"></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Access point name"
+            formControlName="accessPoint"
+          />
+        </div>
+        <small
+          *ngIf="accessPoint?.invalid && accessPoint?.touched"
+          class="text-danger my-1"
+          >Location Name is required</small
+        >
+      </div>
+      <div class="col-3">
+        <div class="button-group">
+          <label
+            for="checkboxOne"
+            [class]="
+              radioValue === 'person'
+                ? 'checkbox-label active'
+                : 'checkbox-label'
+            "
+            (click)="checkedRadio('person')"
+          >
+            <input type="checkbox" id="checkboxOne" />
+            <span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5 19.6875C22.9366 19.6875 27.3437 15.2804 27.3437 9.84375C27.3437 4.40713 22.9366 0 17.5 0C12.0641 0 7.65625 4.40713 7.65625 9.84375C7.65625 15.2804 12.0654 19.6875 17.5 19.6875ZM17.5 2.1875C21.7219 2.1875 25.1562 5.62188 25.1562 9.84375C25.1562 14.0684 21.7246 17.5 17.5 17.5C13.2754 17.5 9.84375 14.0684 9.84375 9.84375C9.84375 5.62188 13.2754 2.1875 17.5 2.1875ZM24.001 21.875H10.9375C4.89726 21.875 0 26.7716 0 32.8125C0 34.0204 0.97959 35 2.12598 35H32.8125C34.0204 35 34.9385 34.0204 34.9385 32.8125C35 26.7695 30.1055 21.875 24.001 21.875ZM2.1875 32.8125C2.1875 27.9877 6.11269 24.0625 10.9375 24.0625H24.001C28.8887 24.0625 32.8125 27.9863 32.8125 32.8125H2.1875Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </label>
+          <label
+            for="checkboxOne"
+            [class]="
+              radioValue === 'delete'
+                ? 'checkbox-label label-trash'
+                : 'checkbox-label '
+            "
+            (click)="checkedRadio('delete')"
+          >
+            <input type="checkbox" id="checkboxTwo" checked />
+            <span>
+              <svg
+                width="36"
+                height="37"
+                viewBox="0 0 36 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8H4.675M4.675 8H34.075M4.675 8V32.5C4.675 33.4283 5.06219 34.3185 5.75138 34.9749C6.44058 35.6313 7.37533 36 8.35 36H26.725C27.6997 36 28.6344 35.6313 29.3236 34.9749C30.0128 34.3185 30.4 33.4283 30.4 32.5V8H4.675ZM10.1875 8V4.5C10.1875 3.57174 10.5747 2.6815 11.2639 2.02513C11.9531 1.36875 12.8878 1 13.8625 1H21.2125C22.1872 1 23.1219 1.36875 23.8111 2.02513C24.5003 2.6815 24.8875 3.57174 24.8875 4.5V8M13.8625 16.75V27.25M21.2125 16.75V27.25"
+                  stroke="#EC7063"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-next" (click)="formSubmit()">Next</button>
+  <button class="btn btn-back mt-2" (click)="goBack()">Back</button>
+</form>

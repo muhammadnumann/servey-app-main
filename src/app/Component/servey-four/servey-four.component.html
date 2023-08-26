@@ -1,0 +1,133 @@
+<form
+  [formGroup]="contactForm"
+  (ngSubmit)="formSubmit()"
+  class="contact-form mt-5"
+>
+  <h3 class="heading-top text-center">Contact Details</h3>
+
+  <p>You opted to be contacted by one of our representatives</p>
+  <p>
+    Please give us your contact details and let us know what are you interested
+    in.
+  </p>
+
+  <small>Contact details</small>
+
+  <div class="row form-row">
+    <div class="my-1 col-md-6">
+      <div class="input-group">
+        <span class="icon icon-user"></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="First Name"
+          formControlName="first_name"
+        />
+        <small
+          *ngIf="first_name?.invalid && first_name?.touched"
+          class="text-danger my-1"
+          >First Name is required</small
+        >
+      </div>
+    </div>
+    <div class="my-1 col-md-6">
+      <div class="input-group">
+        <span class="icon icon-user"></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Last Name"
+          formControlName="last_name"
+        />
+      </div>
+      <small
+        *ngIf="last_name?.invalid && last_name?.touched"
+        class="text-danger my-1"
+        >Last Name is required</small
+      >
+    </div>
+    <div class="my-1 col-md-12">
+      <div class="input-group">
+        <span class="icon icon-email"></span>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          formControlName="email"
+        />
+      </div>
+      <small *ngIf="email?.invalid && email?.touched" class="text-danger my-1">
+      </small>
+    </div>
+    <div class="my-1 col-md-12">
+      <div class="input-group">
+        <span class="icon icon-phone"></span>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Mobile"
+          formControlName="mobile"
+        />
+      </div>
+      <small *ngIf="mobile?.invalid && mobile?.touched" class="text-danger my-1"
+        >Phone is required</small
+      >
+    </div>
+    <div class="my-1 col-md-12">
+      <div class="input-group">
+        <span class="icon icon-phone"></span>
+        <select formControlName="country" name="" id="" class="form-control">
+          <option value="">Country</option>
+          <option value="Pakistan">Pakistan</option>
+        </select>
+      </div>
+      <small
+        *ngIf="country?.invalid && country?.touched"
+        class="text-danger my-1"
+        >Country is required</small
+      >
+    </div>
+  </div>
+
+  <small>Interest</small>
+  <div class="checkbox-items my-2">
+    <div class="inline-checkbox my-1">
+      <input
+        type="checkbox"
+        formControlName="interested1"
+        value="I want to know more about your solutions"
+      />
+      <small class="pl-2"> I want to know more about your solutions</small>
+    </div>
+
+    <div class="inline-checkbox my-1">
+      <input
+        type="checkbox"
+        formControlName="interested2"
+        value="I need to understand requirements and capabilities"
+      />
+      <small class="pl-2">
+        I need to understand requirements and capabilities</small
+      >
+    </div>
+
+    <div class="inline-checkbox my-1">
+      <input
+        type="checkbox"
+        formControlName="interested3"
+        value="I have a very specific need I need to discuss"
+      />
+      <small class="pl-2"> I have a very specific need I need to discuss</small>
+    </div>
+  </div>
+
+  <div class="button-group mb-4">
+    <button
+      [disabled]="contactForm.invalid"
+      class="btn btn-next btn-next"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>

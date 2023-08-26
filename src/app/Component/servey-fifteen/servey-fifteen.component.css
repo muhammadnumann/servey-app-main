@@ -1,0 +1,196 @@
+.heading-top {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #08073a;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #696969;
+  margin-bottom: 30px !important;
+}
+.checkbox-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #696969;
+}
+
+/* The container */
+.label-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 23px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #08073a;
+}
+
+/* Hide the browser's default radio button */
+.label-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 1px;
+  height: 28px;
+  width: 28px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.label-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.label-radio input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.label-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.label-radio .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3498db;
+}
+.btn-next {
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-back {
+  border: 2px solid #3498db;
+  background-color: #fff;
+  color: #3498db;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.btn-back:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.btn-next:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.checkbox-item {
+  margin: 10px 15px !important;
+}
+@media (max-width: 1350px) {
+  .checkbox-item {
+    width: 145px;
+  }
+  .checkbox-group label,
+  .input-item {
+    width: 145px;
+    height: 145px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 440px) {
+  .heading-top {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .small {
+    font-size: 16px;
+    line-height: 24px;
+    /* margin-bottom: 30px !important; */
+  }
+  .checkbox-item p {
+    font-size: 14px;
+  }
+  .checkbox-group label {
+    width: 120px;
+    height: 120px;
+  }
+  .checkbox-group label svg {
+    width: 70px;
+    height: 100px;
+  }
+  .label-radio {
+    font-size: 12px;
+  }
+  .label-radio {
+    padding-left: 28px;
+    margin-bottom: 12px;
+  }
+  .checkmark {
+    height: 20px;
+    width: 20px;
+  }
+
+  .label-radio .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .heading-top {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  .small {
+    font-size: 10px;
+  }
+  .checkbox-item p {
+    font-size: 12px;
+  }
+  .checkbox-group label {
+    width: 105px;
+    height: 105px;
+  }
+  .checkbox-group label svg {
+    width: 65px;
+    height: 90px;
+  }
+  .label-radio {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,83 @@
+.form-inner {
+  max-width: 400px;
+}
+.checkbox-group label.active {
+  background-color: #3498db;
+}
+.checkbox-group label.active svg path {
+  fill: #ffffff;
+}
+.checkbox-group label input {
+  display: none;
+}
+.btn-next {
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.contact-form .form-row {
+  margin: 20px -15px;
+}
+.contact-form ::placeholder,
+.contact-form select {
+  color: #696969;
+  font-size: 14px;
+}
+.contact-form .form-control {
+  box-shadow: none;
+  border: 1px solid #cbcbcb;
+  margin: 0px 0px 0px;
+  padding: 12px 20px 12px 45px;
+  position: relative;
+  z-index: 99;
+}
+.contact-form .input-group span.icon {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px 15px;
+  transform: scale(0.8);
+  z-index: 100;
+}
+.contact-form .input-group .icon-user {
+  background: url("/assets/images/person-icon.png");
+}
+.contact-form .input-group .icon-email {
+  background: url("/assets/images/envelope-icon.png");
+}
+.contact-form .input-group .icon-phone {
+  background: url("/assets/images/phone-icon.png");
+}
+.contact-form small {
+  color: #696969;
+  font-size: 14px;
+}
+.contact-form .button-group {
+  margin-top: 45px;
+}
+
+.contact-form .inline-checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+.contact-form .inline-checkbox small {
+  display: inline-block;
+  padding-left: 10px;
+}
+.contact-form .inline-checkbox input {
+  transform: scale(1.5);
+}
+.contact-form .btn-cancel {
+  background-color: #ec7063;
+}
+
+@media (max-width: 768px) {
+  .form-inner {
+    margin-top: 50px;
+  }
+}

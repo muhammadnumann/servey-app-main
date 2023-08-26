@@ -1,0 +1,23 @@
+.form-inner {
+  position: relative;
+  margin-top: 40px;
+}
+.recaptcha-container {
+  padding: 80px 0px;
+}
+.recaptcha-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .form-inner {
+    position: relative;
+    margin-top: 151px;
+  }
+  .recaptcha-container {
+    padding: 80px 0px;
+  }
+}

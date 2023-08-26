@@ -1,0 +1,211 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.column-left {
+    position: sticky;
+    top: 0;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.form-right {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-inner .heading-top {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 19px;
+}
+.form-inner .sub{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #08073A;
+    margin-bottom: 21px;
+}
+.intro-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.text-small {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem !important;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox-item {
+    margin: 10px 15px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+.checkbox-item p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 80%;
+    text-align: center;
+    color: #696969;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.checkbox-group label {
+    width: 170px;
+    height: 170px;
+    border: 3px solid #5fa3de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.checkbox-group label svg path {
+    fill: #3498DB;
+}
+.checkbox-group label.active {
+    background-color: #3498DB;
+}
+.checkbox-group label.active svg path {
+    fill: #ffffff;
+}
+.checkbox-group label input {
+    display: none;
+}
+.checkbox-group .checkbox-bottom {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    text-align: center;
+    color: #696969;
+}
+.welcome-form .button-group {
+    margin-top: 45px;
+}
+
+.welcome-form .inline-checkbox {
+    display: inline-flex;
+    align-items: center;
+}
+.welcome-form .inline-checkbox small {
+    display: inline-block;
+    padding-left: 10px;
+}
+.welcome-form .btn-cancel {
+    background-color: #EC7063;
+    border: 2px solid #EC7063;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100%;
+}
+.welcome-form .btn-cancel:hover {
+    border: 2px solid #EC7063;
+    color: #EC7063;
+    transition: all .5s ease;
+    background-color: #fff;
+}
+.btn-next {
+    background: #3498DB;
+    border: 2px solid #3498DB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+}
+.btn-back {
+    border: 2px solid #3498DB;
+    background-color: #fff;
+    color: #3498DB;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+}
+.btn-next:hover {
+    background: transparent;
+    border: 2px solid #3498DB;
+    color: #3498DB;
+    transition: all .5s ease;
+}
+.btn-back:hover {
+    background-color: #3498DB;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+.row-main {
+    display: flex;
+    align-items: center;
+}
+.btn-back:hover {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+@media (min-width: 992px){
+    .col-adjust-1 {
+        flex: 0 0 auto;
+        width: 55.333333%;
+    }
+    .col-adjust-2 {
+        flex: 0 0 auto;
+        width: 44.666666%;
+    }
+}
+@media (max-width: 1350px ) {
+    .checkbox-item {
+        width: 145px;
+    }
+    .checkbox-group label,
+    .input-item{
+        width: 145px;
+        height: 145px;
+        border: 2px solid #3498DB;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 992px) {
+    .form-inner {
+        margin-top: 50px;
+    }
+    .column-left {
+        padding: 0 15px;
+    }
+}

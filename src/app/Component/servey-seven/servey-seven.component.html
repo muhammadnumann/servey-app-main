@@ -1,0 +1,90 @@
+<form
+  [formGroup]="accessPointArrayForm"
+  (ngSubmit)="formSubmit()"
+  class="form-inner location-form my-5"
+>
+  <h3 class="heading-top">Access points</h3>
+  <p>Please let us know what access points you want to manage with our app.</p>
+  <p>
+    Bear in mind that if do not add all exterior access points, parking capacity
+    cannot be accurately managed.
+  </p>
+  <div class="form-grid">
+    <div class="row form-row">
+      <div class="col-8">
+        <div class="input-group">
+          <span class="icon icon-home"></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Access point name"
+            formControlName="accessPoint"
+          />
+        </div>
+        <small
+          *ngIf="accessPoint?.invalid && accessPoint?.touched"
+          class="text-danger my-1"
+          >Location Name is required</small
+        >
+      </div>
+      <div class="col-3">
+        <div class="button-group">
+          <label
+            for="checkboxOne"
+            [class]="
+              radioValue === 'person'
+                ? 'checkbox-label active'
+                : 'checkbox-label'
+            "
+            (click)="checkedRadio('person')"
+          >
+            <input type="checkbox" id="checkboxOne" />
+            <span>
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5 19.6875C22.9366 19.6875 27.3437 15.2804 27.3437 9.84375C27.3437 4.40713 22.9366 0 17.5 0C12.0641 0 7.65625 4.40713 7.65625 9.84375C7.65625 15.2804 12.0654 19.6875 17.5 19.6875ZM17.5 2.1875C21.7219 2.1875 25.1562 5.62188 25.1562 9.84375C25.1562 14.0684 21.7246 17.5 17.5 17.5C13.2754 17.5 9.84375 14.0684 9.84375 9.84375C9.84375 5.62188 13.2754 2.1875 17.5 2.1875ZM24.001 21.875H10.9375C4.89726 21.875 0 26.7716 0 32.8125C0 34.0204 0.97959 35 2.12598 35H32.8125C34.0204 35 34.9385 34.0204 34.9385 32.8125C35 26.7695 30.1055 21.875 24.001 21.875ZM2.1875 32.8125C2.1875 27.9877 6.11269 24.0625 10.9375 24.0625H24.001C28.8887 24.0625 32.8125 27.9863 32.8125 32.8125H2.1875Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+          </label>
+          <label
+            for="checkboxTwo"
+            [class]="
+              radioValue === 'car'
+                ? 'checkbox-label active'
+                : 'checkbox-label '
+            "
+            (click)="checkedRadio('car')"
+            class="checkbox-label"
+          >
+            <input type="checkbox" id="checkboxTwo" checked />
+            <span>
+              <svg
+                width="40"
+                height="35"
+                viewBox="0 0 40 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.25 20C6.25 18.6172 7.36953 17.5 8.75 17.5C10.1328 17.5 11.25 18.6172 11.25 20C11.25 21.3828 10.1328 22.5 8.75 22.5C7.36953 22.5 6.25 21.3828 6.25 20ZM33.75 20C33.75 21.3828 32.6328 22.5 31.25 22.5C29.8672 22.5 28.75 21.3828 28.75 20C28.75 18.6172 29.8672 17.5 31.25 17.5C32.6328 17.5 33.75 18.6172 33.75 20ZM3.75781 12.25L6.43359 4.60391C7.39844 1.84609 10 0 12.9219 0H27.0781C29.9297 0 32.6016 1.84609 33.5703 4.60391L36.2422 12.25C38.4844 13.5469 40 15.9688 40 18.75V33.125C40 34.1641 39.1641 35 38.125 35C37.0859 35 36.25 34.1641 36.25 33.125V28.75H3.75V33.125C3.75 34.1641 2.91016 35 1.875 35C0.839844 35 0 34.1641 0 33.125V18.75C0 15.9688 1.51172 13.5469 3.75781 12.25ZM8.07812 11.25H31.9219L30.0234 5.84375C29.5859 4.58906 28.4062 3.75 27.0781 3.75H12.9219C11.5938 3.75 10.4141 4.58906 9.97656 5.84375L8.07812 11.25ZM32.5 15H7.5C5.42891 15 3.75 16.6797 3.75 18.75V25H36.25V18.75C36.25 16.6797 34.5703 15 32.5 15Z"
+                  fill="#3498DB"
+                />
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-next" type="submit">Next</button>
+  <button class="btn btn-back mt-2" (click)="goBack()">Back</button>
+</form>

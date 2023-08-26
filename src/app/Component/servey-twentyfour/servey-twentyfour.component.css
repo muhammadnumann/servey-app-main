@@ -1,0 +1,14 @@
+.greet-footer {
+  margin: 45px 0px 45px;
+  text-align: center;
+}
+.greet-content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  line-height: 28px;
+  text-align: left;
+}
+.greet-footer img {
+  max-width: 100%;
+}

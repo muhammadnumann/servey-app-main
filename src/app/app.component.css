@@ -1,0 +1,74 @@
+.form-inner {
+    text-align: center;
+    max-width: 400px;
+}
+.heading-top {
+    font-size: 34px;
+    font-weight: 700;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -34px;
+}
+.checkbox-item {
+    margin: 20px auto;
+    padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkbox-group label {
+    width: 170px;
+    height: 170px;
+    border: 3px solid #5fa3de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px;
+    cursor: pointer;
+}
+.checkbox-group label svg path {
+    fill: #3498DB;
+}
+.checkbox-group label.active {
+    background-color: #3498DB;
+}
+.checkbox-group label.active svg path {
+    fill: #ffffff;
+}
+.checkbox-group label input {
+    display: none;
+}
+.btn-next {
+    background: #3498DB;
+    border: 2px solid #3498DB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+.btn-back {
+    border: 2px solid #3498DB;
+    background-color: #fff;
+    color: #3498DB;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+.btn-next:hover {
+    background: transparent;
+    border: 2px solid #3498DB;
+    color: #3498DB;
+
+}
+.btn-back:hover {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+@media (max-width: 992px) {
+    .form-inner {
+        margin-top: 50px;
+    }
+}
